@@ -2,7 +2,8 @@
 ### A Back-End System for a Social Media Application
 ![MIT License badge](https://img.shields.io/badge/license-MIT_License-green)
 
-https://user-images.githubusercontent.com/79285555/134801300-2217efa0-8f8c-4120-992b-27a6d1b0f405.mov
+![the-social-network-demo](https://user-images.githubusercontent.com/79285555/134801587-85d50485-23a9-459b-a7d5-a3367d9ebb00.gif)
+
 
 <p> ---------------------------------------- </p>
 
