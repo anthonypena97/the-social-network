@@ -19,6 +19,7 @@ A user may create and manage their business database. The database allows for vi
 ## Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
+* [Testing](#testing)
 * [License](#license)
 * [Contributing](#contributing)
 * [Questions](#questions)
@@ -43,6 +44,64 @@ npm start
 
 ## License
 MIT License
+
+## Testing
+For testing API Routes, [Insomnia CORE](https://insomnia.rest/) is highly recommended.
+
+For viewing Database information [MongoDB Compass](https://www.mongodb.com/products/compass) is highly recommeded.
+
+## Routes
+
+### Users
+---
+- GET Users: .../api/users
+- GET Users: .../api/users/:_id
+- POST User: .../api/users
+```
+{
+  "username": "Stephanie",
+  "email": "stephanie@gmail.com"
+}
+```
+- PUT User: .../api/users/:_id
+```
+{
+  "email": "stephanie02@gmail.com"
+}
+```
+- DEL User: .../api/users/:_id
+- POST Friend: .../api/users/:_id/friends/:_id
+*.../api/users/{user-being-added-to}friends/{user-being-added-as-friend}*
+- DEL Friend: .../api/users/:_id/friends/:_id
+- *.../api/users/{user-being-edited-to}friends/{user-being-removed-as-friend}*
+
+
+### Thoughts
+---
+- GET Thoughts: .../api/thoughts
+- GET Thought: .../api/thoughts/:_id
+- POST Thought: .../api/thought
+```
+{
+  "thoughtText": "Here's a cool thought...",
+	"username": "Manuel"
+}
+```
+- PUT Thought: .../api/thoughts/:id
+```
+{
+  "thoughtText": "Here's another cool thought..."
+}
+```
+- DEL Thought: .../api/thoughts/:_id
+- POST Reaction: .../api/thoughts/:_id/reactions
+```
+{
+	"reactionBody": "LOVE",
+	"username": "toto"
+}
+```
+DEL Reaction: .../api/thoughts/:_id/reactions/:_id
     
 Copyright (c) 2021 Anthony Pena
 
